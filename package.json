@@ -1,0 +1,55 @@
+{
+  "name": "yamltree",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jmenon-mwp/yamltree.git",
+    "license": "GPL-3.0-or-later"
+  },
+  "displayName": "YAML Tree Viewer",
+  "description": "Visualize YAML structure with collapsible tree view",
+  "version": "1.0.0",
+  "publisher": "Jayan Menon",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:yamltree.showYamlTree",
+    "onLanguage:yaml"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "yamltree.showYamlTree",
+        "title": "Show YAML Tree"
+      }
+    ],
+    "views": {
+      "explorer": [
+        {
+          "id": "yamltree",
+          "name": "YAML Structure",
+          "icon": "images/yamltree.png"
+        }
+      ]
+    }
+  },
+  "main": "./out/extension.js",
+  "icon": "images/yamltree.png",
+  "dependencies": {
+    "yaml": "^2.8.0",
+    "yaml-ast-parser": "^0.0.43"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.24",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.8.3"
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "vscode:prepublish": "npm run compile",
+    "package": "vsce package"
+  }
+}

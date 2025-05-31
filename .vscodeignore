@@ -1,0 +1,39 @@
+# Exclude source TypeScript files
+src/
+
+# Exclude test files and folders
+**/*.test.ts
+**/*.spec.ts
+test/
+tests/
+
+# Exclude configuration files not needed in package
+*.tsconfig*
+*.eslint*
+*.prettierrc*
+*.env
+
+# Exclude development scripts and configs
+scripts/
+
+# Exclude node_modules except production dependencies (vsce will handle this)
+node_modules/*
+!node_modules/yaml/
+!node_modules/yaml-ast-parser/
+
+# Exclude lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Exclude miscellaneous files
+.git/
+.gitignore
+.vscode/
+.DS_Store
+*.log
+
+# Exclude output not needed in package
+coverage/
+dist/
+build/
