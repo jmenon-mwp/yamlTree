@@ -4,6 +4,8 @@
 
 Visualize your YAML files as a collapsible tree in the sidebar. This extension lets you easily explore the structure of complex YAML documents, focusing only on meaningful, expandable branches.
 
+![Extension Screenshot](./images/screenshot.png)
+
 ## Features
 
 - Displays YAML structure as a tree in the VS Code/Windsurf sidebar
@@ -23,10 +25,6 @@ Visualize your YAML files as a collapsible tree in the sidebar. This extension l
 
 No settings required—just install and use!
 
-## Icon
-
-The extension uses a custom icon: ![yamltree.png](images/yamltree.png)
-
 ## Requirements
 
 - VS Code 1.85.0+ or compatible environment
@@ -36,7 +34,7 @@ The extension uses a custom icon: ![yamltree.png](images/yamltree.png)
 - Clone the repo
 - Run `npm install`
 - Run `npm run compile`
-- Launch the extension in a development host
+- Launch the extension
 
 ## License
 
@@ -44,5 +42,4 @@ GPL-3.0-or-later
 
 ---
 
-Made with ❤️ for YAML lovers. This code was generated with Windsurf and GPT-4.1 by providing examples of the input and output needed, and iteratively refining the code until it met the requirements.
-
+This code was generated with Windsurf and GPT-4.1 by providing examples of the input and output needed, and iteratively refining the code until it met the requirements.

@@ -76,7 +76,6 @@ class YamlTreeProvider implements vscode.TreeDataProvider<YamlTreeItem> {
     public setDocument(document: vscode.TextDocument | undefined) {
         this.document = document;
     }
-    // ...existing fields...
     // Recursively walk the output structure, find corresponding YAML AST node, and build tree
     private buildTreeFromOutput(outputNodes: OutputNode[], yamlNode: yamlAst.YAMLNode, content: string): YamlTreeItem[] {
         const result: YamlTreeItem[] = [];
@@ -147,21 +146,10 @@ class YamlTreeProvider implements vscode.TreeDataProvider<YamlTreeItem> {
             const content = this.document.getText();
             const ast = yamlAst.load(content);
             this.rootItems = this.parseAstNode(ast, content);
-            this.debugPrintTree(this.rootItems);
         } catch (e) {
             vscode.window.showErrorMessage('Failed to parse YAML: ' + (e as Error).message);
         }
         this._onDidChangeTreeData.fire();
-    }
-
-    private debugPrintTree(items: YamlTreeItem[], depth: number = 0): void {
-        console.log('debugPrintTree called');
-        for (const item of items) {
-            console.log(' '.repeat(depth * 2) + item.label);
-            if (item.children && item.children.length > 0) {
-                this.debugPrintTree(item.children, depth + 1);
-            }
-        }
     }
 
     getTreeItem(element: YamlTreeItem): vscode.TreeItem {
