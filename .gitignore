@@ -40,6 +40,7 @@ Thumbs.db
 
 # Keep these files (do not ignore)
 !src/
+!images/
 !package.json
 !package-lock.json
 !tsconfig.json
