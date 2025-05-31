@@ -1,7 +1,5 @@
 # YAML Tree Viewer
 
-![YAML Tree Viewer Icon](images/yamltree.png)
-
 Visualize your YAML files as a collapsible tree in the sidebar. This extension lets you easily explore the structure of complex YAML documents, focusing only on meaningful, expandable branches.
 
 ![Extension Screenshot](./images/screenshot.png)
