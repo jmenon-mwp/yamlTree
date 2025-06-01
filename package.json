@@ -30,7 +30,7 @@
       "explorer": [
         {
           "id": "yamltree",
-          "name": "YAML Structure",
+          "name": "YAML Tree",
           "icon": "images/yamltree.png"
         }
       ]

@@ -15,7 +15,7 @@ Visualize your YAML files as a collapsible tree in the sidebar. This extension l
 ## Usage
 
 1. Open any `.yaml` or `.yml` file
-2. Open the "YAML Structure" view in the Explorer sidebar
+2. Open the "YAML Tree" view in the Explorer sidebar
 3. Expand/collapse nodes to explore your YAML's structure
 4. Click a node to jump to its location in the file
 
