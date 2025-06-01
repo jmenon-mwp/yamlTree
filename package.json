@@ -7,7 +7,7 @@
   },
   "displayName": "YAML Tree Viewer",
   "description": "Visualize YAML structure with collapsible tree view",
-  "version": "1.0.0",
+  "version": "v1.0.0",
   "publisher": "Jayan Menon",
   "engines": {
     "vscode": "^1.85.0"
