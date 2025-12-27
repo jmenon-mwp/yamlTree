@@ -16,7 +16,6 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:yamltree.showYamlTree",
     "onLanguage:yaml"
   ],
   "contributes": {
